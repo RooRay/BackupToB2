@@ -1,4 +1,5 @@
 #!/bin/bash
+# Version 1.0.0
 
 # Read README.md on https://github.com/RooRay/BackupToB2 before running
 # This script is built for Ubuntu 22.04, it may break on other versions, variants of linux or other operating systems
