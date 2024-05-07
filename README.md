@@ -17,8 +17,8 @@ After that, generate an Application Key on [this page](https://secure.backblaze.
 
 Next, SSH into your server, put the script onto it via any means (SFTP or cURL probably) and open it in a text editor (like nano) and configure the directory and Backblaze variables.
 
-For the ``DISCORD_WEBHOOK_URL`` variable, open Discord, click on the settings cog beside a channel and then click "Integrations" on the left sidebar followed by the "Webhooks" button and "New Webhook". Note that in servers you don't own you'll need the applicable permissions to do this. Next, set the icon, name, and channel as you wish and then click "Copy Webhook URL". Paste the URL copied to your clipboard into the script for the ``DISCORD_WEBHOOK_URL`` variable.
+For the ``DISCORD_WEBHOOK_URL`` variable, open Discord, click on the settings cog beside a channel and then click "Integrations" on the left sidebar followed by the "Webhooks" button and "New Webhook". Note that in servers you don't own you'll need the applicable permissions to do this. Next, set the icon, name, and channel as you wish and then click "Copy Webhook URL". Paste the URL copied to your text editor into the double speech marks for the ``DISCORD_WEBHOOK_URL`` variable.
 
-That's it! Test the script with ``bash backup-script.sh`` and if you see the green embed in Discord it's all working! Open your Buckets page on the Backblaze website and check the zip file stored to ensure it contains all the data you want.
+That's it! Test the script with ``bash backup-script.sh`` and if you see the embed with a green sidebar in Discord it's all working! Open your Buckets page on the Backblaze website and check the zip file stored to ensure it contains all the data you want.
 
 Optionally you can configure a cronjob to run this script automatically at a certain time interval, you can learn more about cronjobs [here](https://www.digitalocean.com/community/tutorial-collections/how-to-use-cron-to-automate-tasks).
