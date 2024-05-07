@@ -13,7 +13,7 @@ Files are uploaded to and stored in Backblaze in the format ``DD-MM-YYYY_HH-MM-X
 
 Enable B2 on your Backblaze account if it isn't already [here](https://secure.backblaze.com/account_settings.htm). Then create a bucket and pick whatever name you like but note it down as you'll need it later, all other options can be set as you wish (although for security reasons you should definitely set the bucket to Private).
 
-After that, generate an Application Key on [this page](https://secure.backblaze.com/app_keys.htm) and note down the ``keyID`` and ``applicationKey``. The name is not important.
+After that, generate an Application Key on [this page](https://secure.backblaze.com/app_keys.htm) and note down the ``keyID`` and ``applicationKey``. Make sure the options you pick allow the key to write to the bucket you want to use or it won't work. The name of the bucket is not important.
 
 Next, SSH into your server, put the script onto it via any means (SFTP or cURL probably) and open it in a text editor (like nano) and configure the directory and Backblaze variables.
 
